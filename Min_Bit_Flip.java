@@ -1,7 +1,7 @@
 import java.util.*;
 public class Min_Bit_Flip {
 
-    public static int count(int n){
+    public static int count_bit(int n){
         int count = 0;
         while(n>0){
             if((n&1)!=0){
@@ -17,6 +17,6 @@ public class Min_Bit_Flip {
         int n = sc.nextInt();
         int t = sc.nextInt();
         int res = n^t;
-        System.out.println(count(res));
+        System.out.println(count_bit(res));
     }    
 }
