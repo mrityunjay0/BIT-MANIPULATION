@@ -5,7 +5,6 @@ public class Get_bit{
         System.out.println("Enter N and Index to get its value");
         int n = sc.nextInt();
         int index = sc.nextInt();
-        int bitmask = 1<<index;
-        System.out.println((n&bitmask)==0?"0":"1");
+        System.out.println((n&(1<<index))==0?"0":"1");
     }
 }
